@@ -1,5 +1,5 @@
 # koop-output-flat
-This output-services plugin converts responds with a "flat" json array. All nested GeoJSON properties are moved to the root level and given keys that are a path to their original nested location. For example, the following GeoJSON:
+This output-services plugin converts GeoJSON properties to a "flat" json array.  Geometry is stripped. Any nested GeoJSON properties are moved to the root level and given keys that are a path to their original nested location. For example, the following GeoJSON:
 
 ```
 {

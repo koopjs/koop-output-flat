@@ -43,7 +43,7 @@ Note that geometry is omitted from the response
 .
 ## Usage
 
-Register this plugin with koop before your provider plugins to ensure that the Odata routes are bound to the providers.
+Register this plugin with koop before your provider plugins to ensure that the `flat` routes are bound to the providers.
 
 ```
 const flat = require('@koopjs/output-flat')
@@ -52,6 +52,6 @@ koop.register(flat)
 // Register providers
 ```
 
-After startup, Koop will include an OData route for each registered provider.  For example, if you had registered the Github provider, the following route would be available:
+After startup, Koop will include an `flat` route for each registered provider.  For example, if you had registered the Github provider, the following route would be available:
 
 `/github/:id/flat`
